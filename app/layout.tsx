@@ -1,16 +1,8 @@
 import type { Metadata } from 'next';
 import './globals.css';
-
 export const metadata: Metadata = {
-  title: 'Rodrigo Maglapid | Software Developer & ABOTRIX',
-  description: 'Official portfolio of Rodrigo C. Maglapid Jr. — websites, POS systems, SaaS platforms and business software.',
-  openGraph: {
-    title: 'Rodrigo Maglapid | Software Developer',
-    description: 'Modern websites, POS systems, SaaS platforms and cloud-ready business applications.',
-    type: 'website'
-  }
+  title: 'Rodrigo Maglapid | ABOTRIX Software Developer',
+  description: 'Official portfolio of Rodrigo C. Maglapid Jr. — business websites, POS systems, SaaS platforms and cloud-ready applications.',
+  openGraph: { title:'Rodrigo Maglapid | ABOTRIX', description:'Business software and digital solutions built for real operations.', type:'website' }
 };
-
-export default function RootLayout({children}:{children:React.ReactNode}) {
-  return <html lang="en" suppressHydrationWarning><body>{children}</body></html>;
-}
+export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="en" suppressHydrationWarning><body>{children}</body></html>}

@@ -1,12 +1,8 @@
 {
-  "name": "rodrigo-maglapid-portfolio-v3",
-  "version": "3.0.0",
+  "name": "rodrigo-maglapid-portfolio-v4",
+  "version": "4.0.0",
   "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
-  },
+  "scripts": {"dev":"next dev","build":"next build","start":"next start"},
   "dependencies": {
     "framer-motion": "^11.18.2",
     "lucide-react": "^0.468.0",
