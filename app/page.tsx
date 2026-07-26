@@ -31,7 +31,9 @@ const posts=[
 export default function Home(){
  const [dark,setDark]=useState(true); const [open,setOpen]=useState(false); const [loading,setLoading]=useState(true); const [filter,setFilter]=useState('All');
  useEffect(()=>{const t=setTimeout(()=>setLoading(false),900);return()=>clearTimeout(t)},[]);
- useEffect(()=>document.documentElement.classList.toggle('light',!dark),[dark]);
+ useEffect(() => {
+  document.documentElement.classList.toggle("light", !dark);
+}, [dark]);
  const year=useMemo(()=>new Date().getFullYear(),[]);
  const tags=['All','SaaS','POS','Alerts','Travel'];
  const visible=filter==='All'?projects:projects.filter(p=>p.tags.includes(filter));
