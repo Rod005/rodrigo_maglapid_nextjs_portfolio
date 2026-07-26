@@ -1,5 +1,50 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-:root{color-scheme:dark}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif}.light{color-scheme:light}*{box-sizing:border-box}::selection{background:rgba(53,230,123,.35)}
-@layer components{.glass{@apply border border-white/10 bg-white/[0.045] backdrop-blur-xl light:border-black/10 light:bg-white/80}.section-title{@apply text-4xl font-extrabold tracking-[-.04em] sm:text-5xl}.field{@apply rounded-xl border border-white/10 bg-black/25 p-4 text-white outline-none placeholder:text-white/35 focus:border-accent light:border-black/10 light:bg-white light:text-black light:placeholder:text-black/35}}
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.light {
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: rgba(53, 230, 123, 0.35);
+}
+
+@layer components {
+  .glass {
+    @apply border border-white/10 bg-white/[0.045] backdrop-blur-xl;
+  }
+
+  .section-title {
+    @apply text-4xl font-extrabold tracking-[-0.04em] sm:text-5xl;
+  }
+
+  .field {
+    @apply rounded-xl border border-white/10 bg-black/25 p-4 text-white outline-none placeholder:text-white/35 focus:border-accent;
+  }
+}
+
+.light .glass {
+  @apply border-black/10 bg-white/80;
+}
+
+.light .field {
+  @apply border-black/10 bg-white text-black placeholder:text-black/35;
+}
