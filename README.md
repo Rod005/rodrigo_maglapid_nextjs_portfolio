@@ -1,0 +1,1 @@
+# Rodrigo Maglapid — Next.js Portfolio
