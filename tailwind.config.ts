@@ -1,20 +1,12 @@
 import type { Config } from 'tailwindcss';
-
 const config: Config = {
-  content: ['./app/**/*.{js,ts,jsx,tsx,mdx}', './components/**/*.{js,ts,jsx,tsx,mdx}'],
   darkMode: 'class',
+  content: ['./app/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
     extend: {
-      colors: {
-        ink: '#07100c',
-        panel: '#0d1b14',
-        line: '#21432f',
-        accent: '#31d773',
-        mint: '#a7f3c8'
-      },
-      boxShadow: {
-        glow: '0 0 60px rgba(49,215,115,.18)'
-      }
+      colors: { ink:'#04110b', panel:'#091b11', accent:'#35e67b', soft:'#a9f7c7' },
+      boxShadow: { glow:'0 0 80px rgba(53,230,123,.18)' },
+      backgroundImage: { grid:'linear-gradient(rgba(53,230,123,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(53,230,123,.045) 1px,transparent 1px)' }
     }
   },
   plugins: []
